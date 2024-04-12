@@ -16,6 +16,7 @@ h_use = True
 loc = 'rb'
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    global h_perc, w_perc,h_use, loc
     await context.bot.send_message(
         chat_id=update.effective_chat.id,
         text='Приветствую, боевой брат! Чтобы узнать, чем я могу вам помочь, введите /help.'
